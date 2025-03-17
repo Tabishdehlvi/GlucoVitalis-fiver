@@ -69,6 +69,56 @@
       media="all"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+
+    <!-- <style>
+      .pricing-card {
+        transition: all 0.3s ease-in-out;
+        border: 2px solid transparent;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .pricing-card:hover {
+        transform: scale(1.05);
+        border-color: #198754; /* Green border on hover */
+      }
+    </style> -->
+
+    <style>
+      .pricing-card {
+        transition: all 0.3s ease-in-out;
+        border: 2px solid transparent;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .pricing-card:hover {
+        transform: scale(1.1);
+        border: 4px solid #0b6631; /* Gold border on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .pricing-card .header {
+        background: black;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .btn-yellow {
+        background-color: #ffd700;
+        border: none;
+        font-weight: bold;
+      }
+
+      .btn-yellow:hover {
+        background-color: #e6c200;
+      }
+    </style>
+
     <!-- END Style -->
 
     <!-- Clarity -->
@@ -638,15 +688,16 @@
               <a href="#benefits" class="text-white text-decoration-none fs-6"
                 >Benefits</a
               >
-              <a href="#faq" class="text-white text-decoration-none fs-6"
+              <!-- <a href="#faq" class="text-white text-decoration-none fs-6"
                 >FAQ</a
-              >
+              > -->
             </nav>
             <a href="#" class="btn btn-danger btn-sm">Order Now</a>
           </div>
         </div>
       </section>
 
+      <!-- Banner Section -->
       <section class="py-5" style="background-color: #243b27f5">
         <div class="container">
           <div class="row align-items-center g-4">
@@ -676,14 +727,15 @@
         </div>
       </section>
 
+      <!-- Ingredients Section -->
       <section class="py-5">
         <div class="container">
           <div class="row g-4">
             <!-- Ingredient Item -->
-            <div class="col-md-4 text-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center">
               <img
                 src="images/maca-root.webp"
-                alt="Epimedium"
+                alt="Maca Root Extract"
                 class="img-fluid rounded-circle border border-light shadow"
                 style="width: 120px; height: 120px; object-fit: cover"
               />
@@ -691,63 +743,611 @@
               <p class="text-body">Boosts Your Energy and Enhances Endurance</p>
             </div>
 
-            <div class="col-md-4 text-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center">
               <img
-                src="images/maca-root.webp"
-                alt="Epimedium"
+                src="images/grape-seed-extract.webp"
+                alt="Grape Seed Extract"
                 class="img-fluid rounded-circle border border-light shadow"
                 style="width: 120px; height: 120px; object-fit: cover"
               />
-              <h5 class="fw-bold mt-3 text-body">Maca Root Extract</h5>
-              <p class="text-body">Boosts Your Energy and Enhances Endurance</p>
+              <h5 class="fw-bold mt-3 text-body">Grape Seed Extract</h5>
+              <p class="text-body">
+                Rich in Antioxidants, Supports Circulation
+              </p>
             </div>
 
-            <div class="col-md-4 text-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center">
               <img
-                src="images/maca-root.webp"
-                alt="Epimedium"
+                src="images/african-mango-fruit-extract.webp"
+                alt="African Mango Fruit Extract"
                 class="img-fluid rounded-circle border border-light shadow"
                 style="width: 120px; height: 120px; object-fit: cover"
               />
-              <h5 class="fw-bold mt-3 text-body">Maca Root Extract</h5>
-              <p class="text-body">Boosts Your Energy and Enhances Endurance</p>
+              <h5 class="fw-bold mt-3 text-body">
+                African Mango Fruit Extract
+              </h5>
+              <p class="text-body">
+                Promotes Healthy Metabolism and Weight Management
+              </p>
             </div>
 
-            <div class="col-md-4 text-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center">
               <img
-                src="images/maca-root.webp"
-                alt="Epimedium"
+                src="images/eleuthero-extract.webp"
+                alt="Eleuthero Extract"
                 class="img-fluid rounded-circle border border-light shadow"
                 style="width: 120px; height: 120px; object-fit: cover"
               />
-              <h5 class="fw-bold mt-3 text-body">Maca Root Extract</h5>
-              <p class="text-body">Boosts Your Energy and Enhances Endurance</p>
+              <h5 class="fw-bold mt-3 text-body">Eleuthero Extract</h5>
+              <p class="text-body">Boosts Immunity and Fights Fatigue</p>
             </div>
 
-            <div class="col-md-4 text-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center">
               <img
-                src="images/maca-root.webp"
-                alt="Epimedium"
+                src="images/green-tea-leaf-extract.webp"
+                alt="Green Tea Leaf Extract"
                 class="img-fluid rounded-circle border border-light shadow"
                 style="width: 120px; height: 120px; object-fit: cover"
               />
-              <h5 class="fw-bold mt-3 text-body">Maca Root Extract</h5>
-              <p class="text-body">Boosts Your Energy and Enhances Endurance</p>
+              <h5 class="fw-bold mt-3 text-body">Green Tea Leaf Extract</h5>
+              <p class="text-body">
+                Supports Metabolism and Provides Neuroprotective Benefits
+              </p>
             </div>
 
-            <div class="col-md-4 text-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 text-center">
               <img
-                src="images/maca-root.webp"
-                alt="Epimedium"
+                src="images/gymnema-extract.webp"
+                alt="Gymnema Extract"
                 class="img-fluid rounded-circle border border-light shadow"
                 style="width: 120px; height: 120px; object-fit: cover"
               />
-              <h5 class="fw-bold mt-3 text-body">Maca Root Extract</h5>
-              <p class="text-body">Boosts Your Energy and Enhances Endurance</p>
+              <h5 class="fw-bold mt-3 text-body">Gymnema Extract</h5>
+              <p class="text-body">
+                Helps Regulate Blood Sugar and Supports Circulation
+              </p>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Benefits Sections -->
+      <section style="background-color: #064635; color: white; padding: 50px 0">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Text Content -->
+            <div class="col-md-6">
+              <h2 class="fw-bold">Unlock the Power of GlucoVitalis</h2>
+              <p class="mt-3">
+                The unique GlucoVitalis formula brings together meticulously
+                chosen nutrients, working in harmony to help you balance your
+                blood sugar, lose weight, and embrace a healthier life.
+              </p>
+              <p>
+                When these powerful nutrients are perfectly combined in optimal
+                doses, the results are truly life-changing: you can regain
+                control over your blood sugar levels, curb cravings, and enjoy
+                sustained energy throughout the day.
+              </p>
+              <p>
+                Perhaps you’re looking to shed those extra pounds
+                effortlessly... Or maybe you’re seeking a natural way to feel
+                more energized, confident, and free to live life on your own
+                terms!
+              </p>
+            </div>
+
+            <!-- Image -->
+            <div class="col-md-6 text-center">
+              <img
+                src="images/img-1-bottles.webp"
+                alt="GlucoVitalis Supplement"
+                class="img-fluid"
+                style="max-width: 90%; border-radius: 10px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Satisfaction Section -->
+      <section
+        style="
+          background-color: #1e1e1e;
+          color: white;
+          padding: 50px 0;
+          text-align: center;
+          position: relative;
+        "
+      >
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Badge -->
+            <div class="col-md-2 text-center">
+              <img
+                src="images/guarantee-seal.webp"
+                alt="Fast & Free Shipping"
+                class="img-fluid"
+                style="max-width: 160px"
+              />
+            </div>
+
+            <!-- Text Content -->
+            <div class="col-md-10">
+              <h2 style="font-weight: 700; font-size: 32px">
+                Every <span style="color: #e3b778">3 or 6-Bottle</span> Order
+                Comes With
+                <span style="color: #e3b778">FREE SHIPPING</span> Too!
+              </h2>
+              <p style="font-size: 18px; color: #ccc">
+                * 96% Of Customers Order 6 Bottles (Our Recommended Option)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decorative Arrow -->
+        <div
+          style="
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px; /* Slightly larger arrow */
+            height: 12px;
+            background-color: #1e1e1e;
+            clip-path: polygon(50% 100%, 0 0, 100% 0);
+          "
+        ></div>
+      </section>
+
+      <!-- Discount Banner -->
+      <section class="py-5">
+        <div class="container text-center">
+          <div class="py-4 rounded">
+            <h2 class="fw-bold text-body">Get GlucoVitalis at a Discount</h2>
+            <h3 class="fw-bold text-warning">Before It's Gone!</h3>
+            <p class="fs-5">
+              Secure your order now and enjoy our limited-time savings
+              <span class="text-warning">while supplies last</span>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Privicing Section -->
+      <section id="pricing">
+        <div class="container">
+          <div class="row g-4 justify-content-center">
+            <!-- 2 Bottles -->
+            <div class="col-md-4">
+              <a
+                href="https://dayone.mycartpanda.com/checkout/173288426:1"
+                title="2 Bottles"
+                class="d-block rounded-3 shadow item"
+                style="
+                  text-decoration: none;
+                  padding: 3px;
+                  color: var(--text-color);
+                  background-color: var(--primary-color-light);
+                "
+              >
+                <div class="pricing-card shadow">
+                  <div class="header">BASIC</div>
+                  <p class="fw-bold">2 BOTTLES, 60 Days Supply</p>
+
+                  <img
+                    src="images/img-2-bottles.webp"
+                    alt="2 Bottles"
+                    class="img-fluid"
+                  />
+                  <div
+                    class="d-flex gap-1 lh-1 px-2 align-items-center mx-auto price"
+                    style="max-width: fit-content"
+                  >
+                    <b style="font-size: 2.6em"><sup class="fs-3">$</sup>79</b>
+                    <b class="text-start opacity-75">PER<br />BOTTLE</b>
+                  </div>
+                  <div class="mb-2 savings" style="font-size: 0.85em">
+                    <div
+                      class="p-2 mb-1"
+                      style="
+                        border-top: 1px solid #ccc;
+                        border-bottom: 1px solid #ccc;
+                      "
+                    >
+                      <b class="text-success"
+                        ><i class="bi bi-check-circle-fill"></i>&nbsp;YOU SAVE
+                        $218!</b
+                      >
+                    </div>
+                    <div class="p-2" style="border-bottom: 1px solid #ccc">
+                      <b
+                        ><i class="bi bi-check-circle-fill"></i>&nbsp;60 DAYS
+                        GUARANTEE</b
+                      >
+                    </div>
+                  </div>
+                  <div class="px-2">
+                    <div
+                      class="btn btn-primary rounded-3 button-bg promo fs-4 w-100"
+                      style="font-weight: 900; max-width: 250px"
+                    >
+                      BUY NOW
+                    </div>
+                  </div>
+                  <img
+                    src="images/cards.webp"
+                    alt="Cards"
+                    class="img-fluid mx-auto my-2"
+                    style="max-width: 180px"
+                  />
+                  <div class="px-2 mb-3 totals">
+                    Total:
+                    <s
+                      style="
+                        text-decoration-color: red;
+                        text-decoration-thickness: 2px;
+                      "
+                      >$297</s
+                    >
+                    <b>$158</b>
+                    <br />
+                    <b>+9.99 SHIPPING</b>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- 6 Bottles (Best Value) -->
+            <div class="col-md-4">
+              <a
+                href="https://dayone.mycartpanda.com/checkout/173288426:1"
+                title="2 Bottles"
+                class="d-block rounded-3 shadow item"
+                style="
+                  text-decoration: none;
+                  padding: 3px;
+                  color: var(--text-color);
+                  background-color: var(--primary-color-light);
+                "
+              >
+                <div class="pricing-card shadow">
+                  <div class="header bg-danger">BEST VALUE</div>
+                  <p class="fw-bold">6 BOTTLES, 180 Days Supply</p>
+
+                  <img
+                    src="images/img-6-bottles.webp"
+                    alt="6 Bottles"
+                    class="img-fluid"
+                  />
+                  <div
+                    class="d-flex gap-1 lh-1 px-2 align-items-center mx-auto price"
+                    style="max-width: fit-content"
+                  >
+                    <b style="font-size: 2.6em"><sup class="fs-3">$</sup>49</b>
+                    <b class="text-start opacity-75">PER<br />BOTTLE</b>
+                  </div>
+                  <div class="mb-2 savings" style="font-size: 0.85em">
+                    <div
+                      class="p-2 mb-1"
+                      style="
+                        border-top: 1px solid #ccc;
+                        border-bottom: 1px solid #ccc;
+                      "
+                    >
+                      <b class="text-success"
+                        ><i class="bi bi-check-circle-fill"></i>&nbsp;YOU SAVE
+                        $1488!</b
+                      >
+                    </div>
+                    <div class="p-1" style="border-bottom: 1px solid #ccc">
+                      <b
+                        ><i class="bi bi-check-circle-fill"></i>&nbsp;BIGGEST
+                        DISCOUNT</b
+                      >
+                    </div>
+                    <div class="p-2" style="border-bottom: 1px solid #ccc">
+                      <b
+                        ><i class="bi bi-check-circle-fill"></i>&nbsp;60 DAYS
+                        GUARANTEE</b
+                      >
+                    </div>
+                  </div>
+                  <div class="px-2">
+                    <div
+                      class="btn btn-primary rounded-3 button-bg promo fs-4 w-100"
+                      style="font-weight: 900; max-width: 250px"
+                    >
+                      BUY NOW
+                    </div>
+                  </div>
+                  <img
+                    src="images/cards.webp"
+                    alt="Cards"
+                    class="img-fluid mx-auto my-2"
+                    style="max-width: 180px"
+                  />
+                  <div class="px-2 mb-3 totals">
+                    Total:
+                    <s
+                      style="
+                        text-decoration-color: red;
+                        text-decoration-thickness: 2px;
+                      "
+                      >$1782</s
+                    >
+                    <b>$294</b>
+                    <br />
+                    <b>+ <strong class="text-success">FREE</strong> SHIPPING</b>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- 3 Bottles -->
+            <div class="col-md-4">
+              <a
+                href="https://dayone.mycartpanda.com/checkout/173288426:1"
+                title="2 Bottles"
+                class="d-block rounded-3 shadow item"
+                style="
+                  text-decoration: none;
+                  padding: 3px;
+                  color: var(--text-color);
+                  background-color: var(--primary-color-light);
+                "
+              >
+                <div class="pricing-card shadow">
+                  <div class="header">POPULAR</div>
+                  <p class="fw-bold">3 BOTTLES, 90 Days Supply</p>
+
+                  <img
+                    src="images/img-3-bottles.webp"
+                    alt="2 Bottles"
+                    class="img-fluid"
+                  />
+                  <div
+                    class="d-flex gap-1 lh-1 px-2 align-items-center mx-auto price"
+                    style="max-width: fit-content"
+                  >
+                    <b style="font-size: 2.6em"><sup class="fs-3">$</sup>69</b>
+                    <b class="text-start opacity-75">PER<br />BOTTLE</b>
+                  </div>
+                  <div class="mb-2 savings" style="font-size: 0.85em">
+                    <div
+                      class="p-2 mb-1"
+                      style="
+                        border-top: 1px solid #ccc;
+                        border-bottom: 1px solid #ccc;
+                      "
+                    >
+                      <b class="text-success"
+                        ><i class="bi bi-check-circle-fill"></i>&nbsp;YOU SAVE
+                        $684!</b
+                      >
+                    </div>
+                    <div class="p-2" style="border-bottom: 1px solid #ccc">
+                      <b
+                        ><i class="bi bi-check-circle-fill"></i>&nbsp;60 DAYS
+                        GUARANTEE</b
+                      >
+                    </div>
+                  </div>
+                  <div class="px-2">
+                    <div
+                      class="btn btn-primary rounded-3 button-bg promo fs-4 w-100"
+                      style="font-weight: 900; max-width: 250px"
+                    >
+                      BUY NOW
+                    </div>
+                  </div>
+                  <img
+                    src="images/cards.webp"
+                    alt="Cards"
+                    class="img-fluid mx-auto my-2"
+                    style="max-width: 180px"
+                  />
+                  <div class="px-2 mb-3 totals">
+                    Total:&nbsp;<s
+                      style="
+                        text-decoration-color: red;
+                        text-decoration-thickness: 2px;
+                      "
+                      >$891</s
+                    >&nbsp;<b>$207</b>
+                    <br />
+                    <b>+ <strong class="text-success">FREE</strong> SHIPPING</b>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Guarentee Section -->
+      <section class="py-5 bg-white">
+        <div class="container px-4">
+          <div
+            class="rounded-4 p-4 text-white"
+            style="
+              background: linear-gradient(to right, #166534, #15803d);
+              padding: 60px 20px;
+            "
+          >
+            <!-- Title -->
+            <div class="text-center mb-4">
+              <h2 class="fs-4 fw-bold text-white">
+                100% Satisfaction or Your Money Back
+              </h2>
+              <h3 class="fs-3 fw-bold" style="color: #ffd700">
+                60-Day Guarantee
+              </h3>
+            </div>
+
+            <div class="row align-items-center g-4">
+              <!-- Image -->
+              <div class="col-md-3 text-center">
+                <img
+                  src="images/guarantee-seal.webp"
+                  alt="Guarantee Seal"
+                  class="img-fluid"
+                />
+              </div>
+              <!-- Text -->
+              <div class="col-md-9">
+                <p style="font-size: 16px; line-height: 1.6">
+                  We're so sure you'll experience remarkable results that we
+                  back GlucoVitalis with a 100% satisfaction guarantee for 60
+                  days. Within days of starting, you may notice improved energy
+                  levels, enhanced mental clarity, and better overall
+                  well-being. Many users report reduced sugar cravings and
+                  easier weight management. If after several weeks or even
+                  months you're not satisfied, we'll refund your money entirely.
+                  You're in control of your health this time.
+                </p>
+              </div>
+            </div>
+
+            <!-- Badge Icons -->
+            <div
+              class="d-flex flex-wrap flex-sm-nowrap gap-2 align-items-center justify-content-center"
+            >
+              <figure>
+                <img
+                  src="images/gmp.webp"
+                  alt="Badge"
+                  class="rounded-circle bg-white border border-white"
+                  style="max-width: 60px"
+                />
+              </figure>
+              <figure>
+                <img
+                  src="images/nat.webp"
+                  alt="Badge"
+                  class="rounded-circle bg-white border border-white"
+                  style="max-width: 60px"
+                />
+              </figure>
+              <figure>
+                <img
+                  src="images/usa.webp"
+                  alt="Badge"
+                  class="rounded-circle bg-white border border-white"
+                  style="max-width: 60px"
+                />
+              </figure>
+              <figure>
+                <img
+                  src="images/gmo.webp"
+                  alt="Badge"
+                  class="rounded-circle bg-white border border-white"
+                  style="max-width: 60px"
+                />
+              </figure>
+            </div>
+
+            <!-- <div class="d-flex justify-content-center gap-3 mt-4">
+              <div
+                class="bg-white rounded-circle d-flex align-items-center justify-content-center fw-bold text-center text-success"
+                style="width: 80px; height: 80px; font-size: 12px"
+              >
+                GMP Certified
+              </div>
+              <div
+                class="bg-white rounded-circle d-flex align-items-center justify-content-center fw-bold text-center text-success"
+                style="width: 80px; height: 80px; font-size: 12px"
+              >
+                100% Natural
+              </div>
+              <div
+                class="bg-white rounded-circle d-flex align-items-center justify-content-center fw-bold text-center text-success"
+                style="width: 80px; height: 80px; font-size: 12px"
+              >
+                Made in USA
+              </div>
+              <div
+                class="bg-white rounded-circle d-flex align-items-center justify-content-center fw-bold text-center text-success"
+                style="width: 80px; height: 80px; font-size: 12px"
+              >
+                GMO Free
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer>
+        <div class="bg-dark text-white py-3">
+          <div class="container text-center">
+            <!-- Navigation Links -->
+            <div class="d-flex flex-wrap justify-content-center">
+              <a href="#" class="text-white text-decoration-none mx-3 fw-bold"
+                >Contact</a
+              >
+              <a href="#" class="text-white text-decoration-none mx-3 fw-bold"
+                >Terms</a
+              >
+              <a href="#" class="text-white text-decoration-none mx-3 fw-bold"
+                >Privacy</a
+              >
+              <a href="#" class="text-white text-decoration-none mx-3 fw-bold"
+                >Return Policy</a
+              >
+              <a href="#" class="text-white text-decoration-none mx-3 fw-bold"
+                >Shiiping</a
+              >
+              <a href="#" class="text-white text-decoration-none mx-3 fw-bold"
+                >Disclaimer</a
+              >
+              <a href="#" class="text-white text-decoration-none mx-3 fw-bold"
+                >References</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright and Disclaimer -->
+        <div class="py-3 bg-white">
+          <div style="font-size: 0.7em" class="container text-center">
+            <p>
+              Statements on this website have not been evaluated by the Food and
+              Drug Administration. Products are not intended to diagnose, treat,
+              cure or prevent any disease.
+            </p>
+            <p>
+              The website's content and the product for sale is based upon the
+              author's opinion and is provided solely on an "AS IS" and "AS
+              AVAILABLE" basis. You should do your own research and confirm the
+              information with other sources when searching for information
+              regarding health issues and always review the information
+              carefully with your professional health care provider before using
+              any of the protocols presented on this website and/or in the
+              product sold here. Neither Cartpanda nor the author are engaged in
+              rendering medical or similar professional services or advice via
+              this website or in the product, and the information provided is
+              not intended to replace medical advice offered by a physician or
+              other licensed healthcare provider. You should not construe
+              Cartpanda's sale of this product as an endorsement by Cartpanda of
+              the views expressed herein, or any warranty or guarantee of any
+              strategy, recommendation, treatment, action, or application of
+              advice made by the author of the product.
+            </p>
+            <p>
+              Some names and personal identifying information on this site have
+              been changed to protect the privacy of individuals.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-black text-center py-3">
+          <p class="mb-0 text-white fw-bold">
+            © GlucoVitalis Research 2025. All Rights Reserved
+          </p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
